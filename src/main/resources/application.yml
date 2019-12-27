@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: resource-order-orchestration
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@192.168.99.100:30451/admin
+      #uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@mongodb/${MONGO_DATABASE}
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+server:
+  port: 8081
